@@ -67,4 +67,10 @@ func main ()  {
 	language := "go lang"
 	
 	fmt.Println(language)
+
+	//  Constants
+	const n = 500000000
+	const d = 3e20 / n
+	fmt.Println(d)
+
 }

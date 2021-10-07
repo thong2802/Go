@@ -1,5 +1,9 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	"math"
+)
 
 
 func main()  {
@@ -8,6 +12,11 @@ func main()  {
 
 	fmt.Println("--------------------------------------------------")
 
+	const n = 500000000
+	const d = 3e20 / n
+	fmt.Println(d)
+	fmt.Println(int64(d))
+	fmt.Println(math.Sin(n))
 	fmt.Println("--------------------------------------------------")
 }
 func Sum(number int) (int) {
