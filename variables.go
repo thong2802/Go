@@ -27,6 +27,7 @@ func main ()  {
 	fmt.Println(a1)
 	fmt.Println(b1)
 
+	// Type Reference
 	var a2, b2  = 6, 7
 	fmt.Println(a2)
 	fmt.Println(b2)
@@ -61,4 +62,9 @@ func main ()  {
 	fmt.Println(name2)
 	fmt.Println(address2)
 	fmt.Println(age2)
+
+	// short variable
+	language := "go lang"
+	
+	fmt.Println(language)
 }
