@@ -59,18 +59,56 @@ func main() {
 	fmt.Println(myUint)
 
 	// byte -> bản chất là kiểu dữ liệu Unit 8
-	var myByte = 1
+	var myByte byte = 255
 	fmt.Println(myByte)
-	fmt.Printf("%T", myByte)
+	fmt.Printf("\n%T", myByte)
+	fmt.Println(math.MaxUint8)
 
-
-
-
-
-
-
-
-
+	// byte // alias for uint8 alias for uint8
+	var a byte = 'E'
+	fmt.Println(a)
+	fmt.Printf("%X", a)
 	
+	fmt.Println("---------------")
+	// float32, complex 64 (so thuc)
+	var b float64 = 5.9
+	fmt.Println(b)
+	
+	// complex 64 complex 128 ( so phuc )
+    var z1 complex64 = 10 + 1i
+	fmt.Println(z1)
+
+	var z2 complex64 = 20 + 1i
+	fmt.Println(z1 + z2)
+
+
+	////////////////////////////////////////////
+	// Rune
+	// khong quan tam ki tu do co bao nhieu byte ma ki tu do co bao nhieu byte thi no se cap phat bo nho cho no
+	var String string = "Nhẫn"
+	fmt.Println(String)
+
+	for i := 0; i < len(String); i++ {
+		fmt.Printf("%c", String[i])
+	}
+
+	fmt.Println("\n-----------------")
+    // ep kieu sang runes
+	var String1 string = "Nhẫn"
+	runes := []rune(String1)
+
+	for i := 0; i < len(runes); i++ {
+		fmt.Printf("%c", runes[i])
+	}
+
+	//
+	var myRunes = 'A'
+	fmt.Printf("\n%T", myRunes)
+
+	// Type Convertion - chuyen doi kieu du lieu
+	// Go rat nghiem ngat trong viec chuyen doi kieu du lieu
+	var A int = 1
+	var B float64 = 2.1
+	fmt.Println(float64(A) + B)
 
 }
