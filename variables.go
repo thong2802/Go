@@ -68,7 +68,7 @@ func main ()  {
 	
 	fmt.Println(language)
 
-	//  Constants
+	//  Constants -> khong the su dung cu phap short
 	const n = 500000000
 	const d = 3e20 / n
 	fmt.Println(d)

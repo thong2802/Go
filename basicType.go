@@ -83,7 +83,7 @@ func main() {
 
 
 	////////////////////////////////////////////
-	// Rune
+	// Rune -> int32
 	// khong quan tam ki tu do co bao nhieu byte ma ki tu do co bao nhieu byte thi no se cap phat bo nho cho no
 	var String string = "Nhẫn"
 	fmt.Println(String)
@@ -110,5 +110,8 @@ func main() {
 	var A int = 1
 	var B float64 = 2.1
 	fmt.Println(float64(A) + B)
+
+
+	// unitptr -> luu giua dia chi con tro
 
 }
