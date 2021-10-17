@@ -36,7 +36,19 @@ func main() {
 	e[0] = 9
 
 	fmt.Println("d is", d)	// In ra 1 2 3 4 5
-	fmt.Println("e is", e)	// In ra 9 2 3 4 5 
+	fmt.Println("e is", e)	// In ra 9 2 3 4 5
+
+	//Chúng ta có thể dùng vòng lặp for dể duyệt qua các phần tử của array. Sau đây là những cách thường dùng để duyệt qua một array:
+	//Chúng ta có thể dùng vòng lặp for dể duyệt qua các phần tử của array. Sau đây là những cách thường dùng để duyệt qua một array:
+	for i := range a {
+		fmt.Printf("a[%d]: %d\n", i, a[i])
+	}
+	for i, v := range a {
+		fmt.Printf("b[%d]: %d\n", i, v)
+	}
+	for i := 0; i < len(a); i++ {
+		fmt.Printf("c[%d]: %d\n", i, a[i])
+	}
 
 	// 2. Slices
 	//Slice là một tham chiếu đến Array, nó mô tả một phần (hoặc toàn bộ) Array. 
