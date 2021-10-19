@@ -15,10 +15,11 @@ type Student struct {
 }
 
 type ListStudent []Student
+
 func main() {
 	fmt.Println("My website is Running...")
 
-	http.HandleFunc("/homepage", MyHomePage)
+	http.HandleFunc("/homepage", MyHomePage) // tao ra cac router va handler
 	http.HandleFunc("/about", MyAboutPage)
 	http.HandleFunc("/api/music", MyMusicPage)
 	http.HandleFunc("/api/student", MyStudentPage)
@@ -41,7 +42,7 @@ func MyListStudentPage(writer http.ResponseWriter, request *http.Request) {
 
 func MyStudentPage(writer http.ResponseWriter, request *http.Request) {
 	var student = Student{12, "Thong", 20, []int{8,9,10}}
-	json.NewEncoder(writer).Encode(student)
+	json.NewEncoder(writer).Encode(student) // tra ve dang Json
 }
 
 func MyMusicPage(writer http.ResponseWriter, request *http.Request) {
@@ -65,7 +66,7 @@ func MyMusicPage(writer http.ResponseWriter, request *http.Request) {
 }
 
 func MyAboutPage(writer http.ResponseWriter, request *http.Request) {
-	fmt.Fprint(writer, "<h1>This is my about page</h1>")
+	fmt.Fprint(writer, "<h1>This is my about page</h1>") //Fprint tra ve dang html
 }
 
 func MyHomePage(writer http.ResponseWriter, request *http.Request) {
